@@ -98,18 +98,34 @@
         android:textColor="@color/colorPrimary"
         android:textSize="15dp" />
 
-    <TextView
+    <RelativeLayout
         android:layout_marginBottom="20dp"
         android:layout_marginTop="50dp"
-        android:layout_above="@+id/login_BT"
         android:layout_marginRight="10dp"
-        android:id="@+id/signUp_TV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/createAnAccount"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15dp" />
+        android:layout_above="@+id/login_BT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dontHaveAccount_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/dontHaveAccount"
+            android:textColor="#808080" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_toRightOf="@id/dontHaveAccount_TV"
+            android:id="@+id/signUp_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/signUp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
 
 
 
